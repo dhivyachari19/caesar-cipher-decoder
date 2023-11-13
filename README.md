@@ -1,6 +1,6 @@
 # Caesar Cipher Decoder
 
-> This program works best for inputted strings that have more than 750 characters (not including spaces).
+> This program works best for inputted strings that have more than 750 letters (not including spaces or other characters).
 
 ## Part 1 (Python Notebook): Guessing the Shift Value
 This part of the program is where the user inputs an encrypted string, and a prediction for the shift value is calculated. Following along with the steps listed in the notebook, `caesar_cipher.ipynb`, up to 26 total guesses can be generated, and they will be generated in order of confidence in accuracy. The notebook will store a CSV file that contains the frequency of each letter in the inputted string in the current working directory. A sample of this file is 'lettercounts.csv' is included in this repository. It is important that this file stay in the same directory as the R and Python notebooks, so the file can effectively be used by both programs.
