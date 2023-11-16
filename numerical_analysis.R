@@ -13,8 +13,10 @@ observed_df = data.frame(letter = letters, frequency = 0)
 counts_df = read.csv("lettercounts.csv")
 observed_df["frequency"] = counts_df$Counts
 num_letters = sum(observed_df$frequency)
+
 ggplot(observed_df, aes(x=letters, y=frequency)) + 
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity") + ggtitle("Observed Frequencies of Letters in Current Guess")
+ggsave("observed_freq_on_guess.png")
 
 ## Creating dataset for expected percent frequencies
 expected_pct_df <- data.frame (
